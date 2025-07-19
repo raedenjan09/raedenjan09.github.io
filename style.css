@@ -1,0 +1,560 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  padding: 0;
+  color: #222;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Header Styles */
+.main-header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo h2 {
+  margin: 0;
+  color: #1976d2;
+  font-size: 1.8em;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Project Cards */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  margin: 0 0 12px 0;
+  color: #1976d2;
+  font-size: 1.4em;
+}
+
+.project-card p {
+  margin: 0 0 20px 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #1976d2;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Responsive header */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+  
+  .main-nav ul {
+    gap: 15px;
+  }
+  
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.container {
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  box-shadow: 0 6px 32px rgba(30,40,90,0.10);
+  border-radius: 18px;
+  max-width: 1200px;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 98vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+h1, h2 {
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+nav a {
+  text-decoration: none;
+  color: #1976d2;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #0d47a1;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 40px;
+  padding: 24px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  border-left: 4px solid #1976d2;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-info h1 {
+  margin: 0 0 8px 0;
+  color: #1976d2;
+  font-size: 2.2em;
+}
+
+.title {
+  font-size: 1.3em;
+  color: #666;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.bio {
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  color: #444;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.projects-section {
+  text-align: center;
+}
+
+.projects-section h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Responsive design for profile */
+@media (max-width: 700px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+.week-section {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(30,40,90,0.10);
+  border: 1.5px solid #e3e8f0;
+  transition: box-shadow 0.22s, border-color 0.22s;
+  margin-bottom: 48px;
+  padding: 18px 0;
+  position: relative;
+}
+.week-section:hover {
+  box-shadow: 0 8px 36px 0 rgba(80,180,255,0.13), 0 2px 8px rgba(30,40,90,0.13);
+  border-color: #a5b4fc;
+}
+.week-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.week-flex > video,
+.week-flex > iframe,
+.week-flex > .week-desc {
+  flex: 1 1 0;
+  max-width: 50%;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+.week-section.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.week-section.reverse .week-flex {
+  flex-direction: initial;
+}
+.week-flex video, .week-flex iframe {
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(30,40,90,0.13);
+  border: 2.5px solid #e0e7ff;
+  background: #111;
+  transition: box-shadow 0.22s, border-color 0.22s;
+}
+.week-section:hover .week-flex video, .week-section:hover .week-flex iframe {
+  box-shadow: 0 4px 32px 0 #a5b4fc44, 0 2px 12px #000a;
+  border-color: #a5b4fc;
+}
+.week-desc {
+  background: rgba(245, 247, 255, 0.95);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,40,90,0.07);
+  padding: 40px 30px 40px 28px;
+  margin: 18px 0 18px 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #232946;
+  font-size: 1.13em;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+.week-desc h3 {
+  font-size: 1.5em;
+  color: #1976d2;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.week-desc p {
+  margin: 0;
+  color: #333a4d;
+  font-size: 1.08em;
+  font-weight: 400;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .week-desc {
+    padding: 20px 10px 16px 10px;
+    font-size: 1em;
+  }
+  .week-desc h3 {
+    font-size: 1.18em;
+  }
+}
+
+/* Main project video styling */
+.main-video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Blender video specific styling - larger size */
+.blender-video {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: block;
+  background: #000;
+}
+
+@media (max-width: 700px) {
+  .blender-video {
+    height: 220px;
+  }
+}
+
+@media (max-width: 900px) {
+  .week-flex {
+    flex-direction: column !important;
+    gap: 18px;
+    align-items: stretch;
+    max-width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .week-flex > video,
+  .week-flex > iframe,
+  .week-flex > .week-desc {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .week-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .week-section video, .week-section iframe {
+    width: 100%;
+    height: 200px;
+  }
+} 
+.planet-gif {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: block;
+}
+
+/* Enhanced planet calculator design */
+.age-calculator {
+  background: linear-gradient(135deg, #232946 0%, #1a1a2e 100%);
+  box-shadow: 0 8px 32px rgba(30,40,90,0.18);
+  border: 1.5px solid #2d3250;
+  padding: 40px 32px 32px 32px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-planets-row, .all-planets-row-center {
+  row-gap: 40px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.form-container label {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form-container input[type="number"] {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+  width: 150px;
+}
+
+.form-container button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #1565c0;
+}
+
+.all-planets-row-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.planet-box {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #3a3f5a;
+  background: rgba(30,34,60,0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(30,40,90,0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s, border-color 0.22s;
+  position: relative;
+  padding: 20px 20px 8px 20px;
+  box-sizing: border-box;
+}
+.planet-box:hover {
+  transform: scale(1.07) translateY(-6px);
+  box-shadow: 0 8px 36px 0 rgba(80,180,255,0.18), 0 2px 8px rgba(30,40,90,0.18);
+  border-color: #1976d2;
+  z-index: 2;
+}
+.planet-row-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 24px 4px #1976d2aa, 0 2px 8px #0008;
+  border: 2.5px solid #fff3;
+  background: #111;
+  transition: box-shadow 0.22s, border-color 0.22s;
+}
+.planet-box:hover .planet-row-img {
+  box-shadow: 0 0 36px 8px #42a5f5cc, 0 2px 12px #000a;
+  border-color: #42a5f5;
+}
+.planet-label {
+  font-size: 1.18em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+  text-shadow: 0 2px 8px #000a;
+}
+.planet-age {
+  margin-top: 8px;
+  font-size: 1.08em;
+  color: #42a5f5;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 8px #000a;
+  width: 100%;
+  box-sizing: border-box;
+}
+.all-planets-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  place-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 900px) {
+  .all-planets-row {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 340px;
+  }
+  .planet-box {
+    width: 100px;
+    height: 100px;
+  }
+  .planet-row-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .all-planets-row {
+    grid-template-columns: 1fr;
+    max-width: 170px;
+  }
+  .planet-box {
+    width: 80px;
+    height: 80px;
+  }
+  .planet-row-img {
+    width: 40px;
+    height: 40px;
+  }
+} 
+.planet-box.empty {
+  visibility: hidden;
+  pointer-events: none;
+  background: none;
+  box-shadow: none;
+  border: none;
+} 

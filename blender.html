@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blender Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <div class="logo">
+        <h2>Portfolio</h2>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rotoscope.html">Rotoscope</a></li>
+          <li><a href="blender.html" class="active">Blender</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h1>Blender Project</h1>
+    <div style="margin: 32px 0;">
+      <video class="blender-video" controls autoplay loop muted>
+        <source src="videos/blender/full_vid_blender.mov" type="video/quicktime">
+        <source src="videos/blender/full_vid_blender.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag. Please convert the .mov file to .mp4 format for better compatibility.</p>
+      </video>
+    </div>
+    <h2>Week by Week Progress</h2>
+    <div class="weeks">
+      <!-- Week 1: Sun -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/sunn.gif" alt="Sun GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 1: Sun</h3>
+            <p>The Sun is the star at the center of our solar system and contains 99.8% of its total mass.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 2: Mercury -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/mercury.gif" alt="Mercury GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 2: Mercury</h3>
+            <p>Mercury is the closest planet to the Sun and has a very thin atmosphere, causing extreme temperature fluctuations.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 3: Venus -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/venus.gif" alt="Venus GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 3: Venus</h3>
+            <p>Venus is the hottest planet in our solar system, with a thick, toxic atmosphere of carbon dioxide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 4: Earth -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/earthh.gif" alt="Earth GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 4: Earth</h3>
+            <p>Earth is the only planet known to support life and has a unique atmosphere and abundant water.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 5: Moon -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/moonn.gif" alt="Moon GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 5: Moon</h3>
+            <p>The Moon is Earth's only natural satellite and is responsible for ocean tides.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 6: Mars -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/mars.gif" alt="Mars GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 6: Mars</h3>
+            <p>Mars is known as the Red Planet and is home to the tallest volcano and the deepest canyon in the solar system.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 7: Jupiter -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/jupiter.gif" alt="Jupiter GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 7: Jupiter</h3>
+            <p>Jupiter is the largest planet in our solar system and has a giant storm called the Great Red Spot.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 8: Saturn -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/saturn.gif" alt="Saturn GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 8: Saturn</h3>
+            <p>Saturn is famous for its beautiful rings, which are made mostly of ice particles.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 9: Uranus -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/uranuss.gif" alt="Uranus GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 9: Uranus</h3>
+            <p>Uranus rotates on its side, making its seasons very unusual compared to other planets.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 10: Neptune -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/neptunee.gif" alt="Neptune GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 10: Neptune</h3>
+            <p>Neptune is the windiest planet in the solar system, with winds up to 2,100 km/h (1,300 mph).</p>
+          </div>
+        </div>
+      </div>
+      <!-- Week 11: Pluto -->
+      <div class="week-section">
+        <div class="week-flex">
+          <img src="videos/blender/plutoo.gif" alt="Pluto GIF" class="planet-gif">
+          <div class="week-desc">
+            <h3>Week 11: Pluto</h3>
+            <p>Pluto, once considered the ninth planet, is now classified as a dwarf planet in the Kuiper belt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Age Calculator -->
+    <div class="age-calculator">
+      <h2>Calculate Your Age on Different Planets</h2>
+      <form id="planet-age-form" onsubmit="return false;">
+        <div class="form-container">
+          <label for="earth-age">Enter your age on Earth (years): </label>
+          <input type="number" id="earth-age" min="0" step="0.1" required>
+          <button type="button" onclick="calculatePlanetAges()">Calculate</button>
+        </div>
+      </form>
+      <div id="all-planets-row" class="all-planets-row">
+        <div class="planet-box" id="planet-box-mercury"><img src="videos/blender/mercury.gif" alt="Mercury" class="planet-row-img"><div class="planet-label">Mercury</div><div class="planet-age" id="age-mercury"></div></div>
+        <div class="planet-box" id="planet-box-venus"><img src="videos/blender/venus.gif" alt="Venus" class="planet-row-img"><div class="planet-label">Venus</div><div class="planet-age" id="age-venus"></div></div>
+        <div class="planet-box" id="planet-box-earth"><img src="videos/blender/earthh.gif" alt="Earth" class="planet-row-img"><div class="planet-label">Earth</div><div class="planet-age" id="age-earth"></div></div>
+        <div class="planet-box" id="planet-box-mars"><img src="videos/blender/mars.gif" alt="Mars" class="planet-row-img"><div class="planet-label">Mars</div><div class="planet-age" id="age-mars"></div></div>
+        <div class="planet-box" id="planet-box-jupiter"><img src="videos/blender/jupiter.gif" alt="Jupiter" class="planet-row-img"><div class="planet-label">Jupiter</div><div class="planet-age" id="age-jupiter"></div></div>
+        <div class="planet-box" id="planet-box-saturn"><img src="videos/blender/saturn.gif" alt="Saturn" class="planet-row-img"><div class="planet-label">Saturn</div><div class="planet-age" id="age-saturn"></div></div>
+        <div class="planet-box" id="planet-box-uranus"><img src="videos/blender/uranuss.gif" alt="Uranus" class="planet-row-img"><div class="planet-label">Uranus</div><div class="planet-age" id="age-uranus"></div></div>
+        <div class="planet-box" id="planet-box-neptune"><img src="videos/blender/neptunee.gif" alt="Neptune" class="planet-row-img"><div class="planet-label">Neptune</div><div class="planet-age" id="age-neptune"></div></div>
+        <div class="planet-box" id="planet-box-pluto"><img src="videos/blender/plutoo.gif" alt="Pluto" class="planet-row-img"><div class="planet-label">Pluto</div><div class="planet-age" id="age-pluto"></div></div>
+      </div>
+      <div id="age-planet-image-container" style="display:none"></div>
+      <div id="age-results"></div>
+    </div>
+    <script>
+      function calculatePlanetAges() {
+        const earthAge = parseFloat(document.getElementById('earth-age').value);
+        if (isNaN(earthAge) || earthAge < 0) return;
+        // Orbital periods in Earth years and GIF filenames
+        const planets = [
+          { name: 'Mercury', period: 0.24 },
+          { name: 'Venus', period: 0.62 },
+          { name: 'Earth', period: 1 },
+          { name: 'Mars', period: 1.88 },
+          { name: 'Jupiter', period: 11.86 },
+          { name: 'Saturn', period: 29.46 },
+          { name: 'Uranus', period: 84.01 },
+          { name: 'Neptune', period: 164.8 },
+          { name: 'Pluto', period: 248 }
+        ];
+        const ids = ['mercury','venus','earth','mars','jupiter','saturn','uranus','neptune','pluto'];
+        ids.forEach((id, i) => {
+          const age = (earthAge / planets[i].period).toFixed(2);
+          document.getElementById('age-' + id).textContent = age + ' years old';
+        });
+      }
+      function updateAgePlanetImage(gif, name) {
+        const img = document.getElementById('age-planet-image');
+        img.src = `videos/blender/${gif}`;
+        img.alt = name + ' GIF';
+      }
+    </script>
+  </div>
+</body>
+</html> 
