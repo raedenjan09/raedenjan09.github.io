@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rotoscope Project</title>
+  <title>Rotoscoping</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="header-content">
       <div class="logo">
-        <h2>Portfolio</h2>
+        <h2>Final Project</h2>
       </div>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="rotoscope.html" class="active">Rotoscope</a></li>
-          <li><a href="blender.html">Blender</a></li>
+          <li><a href="rotoscope.html" class="active">Rotoscoping</a></li>
+          <li><a href="blender.html">Animation</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
   <div class="container">
-    <h1>Rotoscope Project</h1>
+    <h1>Rotoscoping</h1>
     <div style="margin: 32px 0;">
-      <video class="main-video" controls>
-        <source src="videos/rotoscope/roto_full.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="video-container">
+        <video class="blender-video" controls autoplay loop muted>
+          <source src="videos/rotoscope/roto_full.mp4" type="video/quicktime">
+          <source src="videos/rotoscope/roto_full.mp4" type="video/mp4">
+          <p>Your browser does not support the video tag. Please convert the .mov file to .mp4 format for better compatibility.</p>
+        </video>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
     <h2>Week by Week Progress</h2>
     <!-- Weeks 1-12 -->
     <div class="weeks">
@@ -37,20 +43,21 @@
       <div class="week-section">
         <div class="week-flex">
           <video controls>
+            
             <source src="videos/rotoscope/week 1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <div class="week-desc">
             <h3>Week 1</h3>
             <p>
-              <strong>Application used:</strong> After effects<br>
-              <strong>Tools I've Used:</strong> Roto brush, puppet tool, and keyframes.<br>
+              <strong>Application used:</strong> After effects (30fps)<br>
+              <strong>Tools I've Used:</strong> Roto brush, puppet tool, keyframes, and animating in 30fps.<br>
               <ul>
                 <li>Roto brush</li>
                 <li>Puppet tool</li>
                 <li>Keyframes</li>
               </ul>
-              In the firt week, I focused on learning the basics of rotoscoping using Adobe After Effects. I practiced using the Roto Brush tool to isolate subjects from their backgrounds and applied the Puppet Tool to animate specific parts of the subject. Keyframes were used to create smooth transitions and movements.
+              In the first week, I focused on learning the basics of rotoscoping using Adobe After Effects. I practiced using the Roto Brush tool to isolate subjects from their backgrounds and applied the Puppet Tool to animate specific parts of the subject. Keyframes were used to create smooth transitions and movements.
             </p>
           </div>
         </div>
@@ -60,7 +67,7 @@
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 2</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
               <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
               <ul>
                 <li>Pen tool</li>
@@ -85,7 +92,7 @@
           </video>
           <div class="week-desc">
             <h3>Week 3</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
               <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
               <ul>
                 <li>Pen tool</li>
@@ -102,7 +109,7 @@
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 4</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
               <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
               <ul>
                 <li>Pen tool</li>
@@ -127,7 +134,7 @@
           </video>
           <div class="week-desc">
             <h3>Week 5</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
               <strong>Tools I've Used:</strong> 
               <ul>
                 <li>Pen tool</li>
@@ -144,7 +151,7 @@
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 6</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
               <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
               <ul>
                 <li>Pen tool</li>
@@ -160,6 +167,7 @@
           </video>
         </div>
       </div>
+      <!-- Week 7 -->
       <div class="week-section">
         <div class="week-flex">
           <video controls>
@@ -168,30 +176,31 @@
           </video>
           <div class="week-desc">
             <h3>Week 7</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> 
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the fifth week, I focused on refining my animation skills by experimenting with different techniques and tools in Flipaclip. I continued to use the Pen Tool for detailed character animations and layers to manage complex scenes and importing backgrounds i've downloaded online to enhance my animation. Onion skinning remained a vital tool for ensuring smooth transitions and maintaining consistency in my animations. 
+              In the seventh week, I focused on refining the timing and spacing of my animations at 30 frames per second. I experimented with frame rates and adjusted the timing of key poses to create smoother, more natural movement. I also began adding secondary actions, such as hair and clothing motion, to enhance the realism and appeal of my rotoscoped sequences.
             </p>
           </div>
         </div>
       </div>
+      <!-- Week 8 -->
       <div class="week-section reverse">
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 8</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the sixth week, I continued to refine my skills in Flipaclip, experimenting with different animation styles and techniques. I focused on creating more dynamic movements and incorporating various effects to enhance the visual appeal of my animations. The Pen Tool was essential for detailed character work, while layers helped me manage complex scenes. Onion skinning remained a crucial tool for ensuring smooth transitions and maintaining consistency in my animations.
+              During the eighth week, I explored adding color and shading to my rotoscoped frames, all while maintaining a consistent 30fps workflow. I learned how to use multiple layers for base colors, shadows, and highlights, which gave my animation more depth and visual interest. This week also involved experimenting with different brush styles to achieve a unique look for my project.
             </p>
           </div>
           <video controls>
@@ -200,6 +209,7 @@
           </video>
         </div>
       </div>
+      <!-- Week 9 -->
       <div class="week-section">
         <div class="week-flex">
           <video controls>
@@ -208,30 +218,31 @@
           </video>
           <div class="week-desc">
             <h3>Week 9</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> 
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the fifth week, I focused on refining my animation skills by experimenting with different techniques and tools in Flipaclip. I continued to use the Pen Tool for detailed character animations and layers to manage complex scenes and importing backgrounds i've downloaded online to enhance my animation. Onion skinning remained a vital tool for ensuring smooth transitions and maintaining consistency in my animations. 
+              In week nine, I worked on background integration. I imported custom backgrounds and practiced matching the animation’s lighting and perspective to the scene, all animated at 30fps. This helped my characters feel more grounded and improved the overall composition of each shot.
             </p>
           </div>
         </div>
       </div>
+      <!-- Week 10 -->
       <div class="week-section reverse">
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 10</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the sixth week, I continued to refine my skills in Flipaclip, experimenting with different animation styles and techniques. I focused on creating more dynamic movements and incorporating various effects to enhance the visual appeal of my animations. The Pen Tool was essential for detailed character work, while layers helped me manage complex scenes. Onion skinning remained a crucial tool for ensuring smooth transitions and maintaining consistency in my animations.
+              For the tenth week, I focused on cleanup and consistency. I reviewed previous frames, corrected any off-model drawings, and ensured that the linework and coloring were consistent throughout the animation. Working at 30fps made it important to keep every frame clean for a polished final result.
             </p>
           </div>
           <video controls>
@@ -240,6 +251,7 @@
           </video>
         </div>
       </div>
+      <!-- Week 11 -->
       <div class="week-section">
         <div class="week-flex">
           <video controls>
@@ -248,30 +260,31 @@
           </video>
           <div class="week-desc">
             <h3>Week 11</h3>
-            <p><strong>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> 
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the fifth week, I focused on refining my animation skills by experimenting with different techniques and tools in Flipaclip. I continued to use the Pen Tool for detailed character animations and layers to manage complex scenes and importing backgrounds i've downloaded online to enhance my animation. Onion skinning remained a vital tool for ensuring smooth transitions and maintaining consistency in my animations. 
+              In the eleventh week, I added final effects and transitions. I experimented with fade-ins, fade-outs, and motion blur to enhance the visual flow between scenes. I also adjusted the timing of transitions to ensure the animation felt cohesive and engaging, all while maintaining the 30fps standard.
             </p>
           </div>
         </div>
       </div>
+      <!-- Week 12 -->
       <div class="week-section reverse">
         <div class="week-flex">
           <div class="week-desc">
             <h3>Week 12</h3>
-            <p>Application used:</strong> Flipaclip<br>
-              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.<br>
+            <p><strong>Application used:</strong> Flipaclip (30fps)<br>
+              <strong>Tools I've Used:</strong> Pen tool, layers, and onion skinning.
               <ul>
                 <li>Pen tool</li>
                 <li>Layers</li>
                 <li>Onion skinning</li>
               </ul>
-              In the sixth week, I continued to refine my skills in Flipaclip, experimenting with different animation styles and techniques. I focused on creating more dynamic movements and incorporating various effects to enhance the visual appeal of my animations. The Pen Tool was essential for detailed character work, while layers helped me manage complex scenes. Onion skinning remained a crucial tool for ensuring smooth transitions and maintaining consistency in my animations.
+              The twelfth week was dedicated to compiling and rendering the final animation. I exported the completed frames, synchronized the animation with audio, and made final adjustments to color and effects. This week marked the culmination of my rotoscoping journey at 30fps, resulting in a finished project that showcases all the skills and techniques I developed throughout the semester.
             </p>
           </div>
           <video controls>
@@ -283,4 +296,4 @@
     </div>
   </div>
 </body>
-</html> 
+</html>

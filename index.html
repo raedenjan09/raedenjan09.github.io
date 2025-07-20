@@ -5,55 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="header-content">
       <div class="logo">
-        <h2>Portfolio</h2>
+        <h2>Final Project</h2>
       </div>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="rotoscope.html">Rotoscope</a></li>
-          <li><a href="blender.html">Blender</a></li>
+          <li><a href="blender.html">Animation</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <div class="container home">
-    <div class="profile-section">
-      <div class="profile-image">
-        <img src="https://via.placeholder.com/150x150/1976d2/ffffff?text=Profile" alt="Profile Picture">
+  <div class="container">
+    <div class="profile-section" style="display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,0.85);border-radius:18px;box-shadow:0 4px 24px rgba(30,40,90,0.10);padding:32px 24px 24px 24px;margin:0 auto 32px auto;max-width:420px;">
+      <div class="profile-image" style="margin-bottom:18px;">
+        <img src="videos/profile.jpg" alt="Profile Photo" style="width:140px;height:140px;border-radius:50%;object-fit:cover;box-shadow:0 4px 16px rgba(30,40,90,0.13);">
       </div>
-      <div class="profile-info">
-        <h1>Your Name</h1>
-        <p class="title">Digital Artist & Animator</p>
-        <p class="bio">Passionate about creating stunning visual content through rotoscoping and 3D animation. Currently working on innovative projects that push the boundaries of digital art.</p>
-        <div class="contact-info">
-          <p><strong>Email:</strong> your.email@example.com</p>
-          <p><strong>Location:</strong> Your City, Country</p>
-          <p><strong>Skills:</strong> Rotoscoping, Blender, Animation, Video Editing</p>
-        </div>
+      <div class="profile-info" style="text-align:center;">
+        <h2 style="font-family:'Inter',Arial,sans-serif;font-weight:700;color:#2563eb;margin-bottom:8px;">Duque, Raeden Jan F.</h2>
+        <div class="title" style="font-size:1.15em;color:#5a6b8a;font-weight:500;">Section: BSIT NS 2A</div>
       </div>
     </div>
-    
-    <div class="projects-section">
-      <h2>My Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <h3>Rotoscope Project</h3>
-          <p>12-week rotoscoping animation project showcasing frame-by-frame animation techniques.</p>
-          <a href="rotoscope.html" class="project-link">View Project →</a>
-        </div>
-        <div class="project-card">
-          <h3>Blender Project</h3>
-          <p>12-week 3D modeling and animation project created with Blender software.</p>
-          <a href="blender.html" class="project-link">View Project →</a>
-        </div>
-      </div>
+    <div class="info-section" style="background:linear-gradient(135deg,#f8fafc 60%,#bfc9db 100%);border-radius:18px;box-shadow:0 4px 24px rgba(30,40,90,0.10);padding:44px 36px 36px 36px;max-width:900px;margin:0 auto 40px auto;">
+      <img src="videos/blender/earthh.gif" alt="Blender Example" style="display:block;margin:0 auto 24px auto;width:180px;height:180px;object-fit:cover;border-radius:16px;box-shadow:0 2px 12px rgba(30,40,90,0.13);">
+      <h2 style="color:#2563eb;font-family:'Inter',Arial,sans-serif;font-weight:700;text-align:center;">What is Blender/Animation?</h2>
+      <p style="font-size:1.13em;color:#232946;text-align:justify;"> <strong>Blender</strong> is a powerful, open-source 3D creation suite used for making animated films, visual effects, art, 3D printed models, motion graphics, and more. <strong>Animation</strong> is the process of creating the illusion of motion by displaying a sequence of images or frames. Blender supports modeling, sculpting, rigging, animation, simulation, rendering, compositing, and motion tracking, making it a complete tool for digital artists and animators.</p>
+      <h3 style="color:#1976d2;font-family:'Inter',Arial,sans-serif;font-weight:600;text-align:center;">How is Animation Done?</h3>
+      <p style="font-size:1.08em;color:#333a4d;text-align:justify;">Animation can be done in many ways, including 2D hand-drawn, 3D computer-generated, and stop-motion. In Blender, artists create 3D models, rig them with skeletons, and animate them using keyframes and motion paths. Lighting, texturing, and rendering complete the process. Animators can also use physics simulations for realistic effects like smoke, fire, and cloth movement.</p>
+      <h3 style="color:#1976d2;font-family:'Inter',Arial,sans-serif;font-weight:600;text-align:center;">Why Use Animation?</h3>
+      <p style="font-size:1.08em;color:#333a4d;text-align:justify;">Animation is used to tell stories, visualize ideas, create simulations, and entertain. It allows creators to bring characters and worlds to life, explain complex concepts, and engage audiences in unique ways. Animation is also widely used in education, advertising, architecture, and scientific visualization to communicate ideas more effectively.</p>
+    </div>
+    <div class="info-section" style="background:linear-gradient(135deg,#f8fafc 60%,#e0e7ff 100%);border-radius:18px;box-shadow:0 4px 24px rgba(30,40,90,0.10);padding:44px 36px 36px 36px;max-width:900px;margin:0 auto 40px auto;">
+      <img src="videos/rotoscope/week 1.mp4" alt="Rotoscope Example" style="display:block;margin:0 auto 24px auto;width:180px;height:180px;object-fit:cover;border-radius:16px;box-shadow:0 2px 12px rgba(30,40,90,0.13);" onerror="this.style.display='none'">
+      <h2 style="color:#2563eb;font-family:'Inter',Arial,sans-serif;font-weight:700;text-align:center;">What is Rotoscope?</h2>
+      <p style="font-size:1.13em;color:#232946;text-align:justify;"><strong>Rotoscoping</strong> is an animation technique where animators trace over live-action footage frame by frame to create realistic motion. It can be done digitally (in software like After Effects or FlipaClip) or traditionally on paper or cels. Rotoscoping is often used to create complex visual effects, remove backgrounds, or add animated elements to live-action scenes.</p>
+      <h3 style="color:#1976d2;font-family:'Inter',Arial,sans-serif;font-weight:600;text-align:center;">How is Rotoscoping Done?</h3>
+      <p style="font-size:1.08em;color:#333a4d;text-align:justify;">Artists import video footage, then draw or paint over each frame to isolate subjects, add effects, or create stylized animation. Tools like the Roto Brush, pen tool, and onion skinning help with precision and smooth transitions. Modern rotoscoping can also involve digital masks and motion tracking for more efficient workflows.</p>
+      <h3 style="color:#1976d2;font-family:'Inter',Arial,sans-serif;font-weight:600;text-align:center;">Why Use Rotoscoping?</h3>
+      <p style="font-size:1.08em;color:#333a4d;text-align:justify;">Rotoscoping is used to create lifelike animation, special effects, and compositing in films and videos. It's valuable for isolating subjects, adding animated elements to live-action, or achieving a unique visual style. Rotoscoping is also essential in visual effects for creating mattes, color grading, and integrating CGI with real footage.</p>
+      <h3 style="color:#1976d2;font-family:'Inter',Arial,sans-serif;font-weight:600;text-align:center;">Uses of Rotoscoping and Animation</h3>
+      <ul style="font-size:1.08em;color:#333a4d;line-height:1.7;margin-left:18px;text-align:left;max-width:500px;margin:0 auto;">
+        <li>Animated movies and TV shows</li>
+        <li>Visual effects in live-action films</li>
+        <li>Explainer videos and educational content</li>
+        <li>Advertising and marketing</li>
+        <li>Video games and interactive media</li>
+        <li>Scientific and medical visualization</li>
+        <li>Virtual reality and augmented reality experiences</li>
+        <li>Forensics and legal reconstructions</li>
+      </ul>
     </div>
   </div>
 </body>
-</html> 
+</html>
